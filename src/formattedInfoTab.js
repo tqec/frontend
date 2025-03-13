@@ -1,14 +1,23 @@
 // formattedInfoTab.js
 const formattedInfoTabContent = (
   <div style={{textAlign: 'center', marginTop: '40px'}}>
-    <p>Welcome to the TQEC app!</p>
+    <p>Welcome to the TQEC frontend!</p>
     <a
       className="App-link"
       href="https://github.com/tqec/tqec"
       target="_blank"
       rel="noopener noreferrer"
     >
-      TQEC repo
+      TQEC main repository
+    </a>
+    <p></p>
+    <a
+      className="App-link"
+      href="https://github.com/tqec/frontend"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      TQEC frontend repository
     </a>
     <p>We designed it to facilitate prototyping quantum error correcting codes.</p>
     <ul style={{ listStylePosition: 'inside', paddingLeft: '0' }}>

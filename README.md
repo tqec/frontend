@@ -1,15 +1,18 @@
-# Alternative Frontend
+# TQEC Frontend
 
-The alternative frontend follows a different design w.r.t. the official frontend in `<repo>/frontend`.
+In the initial design of the software tools developed by the TQEC community,
+we envisioned a graphical frontend to enable the users to build a
+QEC code or a fault-tolerant computation by ``drag-and-drop'' graphical
+elements on top of a qubit grid.
+The frontend is then able to convert the visualization into a library of
+templates to be used by the TQEC backend in its compilation.
 
-**NOTE:** The early development of this alternative frontend is connected to the beginner's guide
+The integration with the backend into a unique pipeline is currently halted.
+
+**NOTE:** The early development of this frontend is connected to the beginner's guide
 of building a project in Javascript using React and Pixi.
 The step-by-step guide can still be accessed in the form of commit history from the
 [PR #89 page](https://github.com/tqec/tqec/pull/89).
-
-**NOTE:** The codebase has been moved out of the official tqec repository with
-[PR #216](https://github.com/tqec/tqec/pull/216)
-and to [tqec-alternative-frontend](https://github.com/tqec/tqec-alternative-frontend).
 
 
 
@@ -46,8 +49,19 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
+## Mock backend
+
+This project provides a mock backend written in Python and located in `<repo>/web`.
+It is used to communicate the template structure to the frontend and to receive
+the rules to fill the template using the plaquette from the plaquette library.
+The plaquette library can be created by the frontend and saved to file.
+
+**TODO:** Allow plaquette library to be loaded from backend too.
+
 
 ## Learn More
+
+Main [TQEC repository](https://github.com/tqec/tqec).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
